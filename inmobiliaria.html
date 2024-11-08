@@ -1,0 +1,142 @@
+<html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Ejemplo</title>
+    <link rel="stylesheet" href="inmobiliaria.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+ 
+<body>
+    <!-- Encabezado -->
+    <div class="header">
+        <header>
+            <div class="logo-container">
+                <img src="./Imagenes TPO/Logo inmobiliaria.jpg" alt="Logo de la empresa" class="logo">
+            </div>
+        </header>
+        <h1> Vilanova Inmobiliaria </h1>
+        <p>Tu mejor opción en Inmobiliaria y Construcciones.</p>
+    </div>
+ 
+    </header>
+    <!-- Sección principal -->
+    <div class="navbar">
+        <a class="navButton" href="#comprar">Comprar</a>
+        <a class="navButton" href="#comprar">Alquilar</a>
+        <a class="navButton" href="#services">Servicios</a>
+        <a class="navButton" href="#contacto">Vender</a>
+        <a class="navButton" href="#about">Nosotros</a>
+        <a class="navButton" href="#contacto">Contacto</a>
+    </div>
+        <!-- Sobre nosotros -->
+         <br><br>
+        <div class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa dedicada a la compra, venta y alquiler de propiedades. Nos enfocamos en brindarte la
+                mejor asesoría para que tomes la decisión correcta.</p>
+        </div>
+        <br><br>
+        <!-- Servicios -->
+        <div class="services">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Compra de propiedades</li>
+                <li>Venta de propiedades</li>
+                <li>Alquiler de propiedades</li>
+                <li>Asesoría inmobiliaria</li>
+            </ul>
+        </div>
+ 
+    <!-- Sección de propiedades -->
+    <div class="properties">
+        <h2>Nuestras Propiedades</h2>
+ 
+        <a class="property" href="casaplaya.html">
+            <img src="./Imagenes TPO/Casa Playa/casa.jpg">
+            <h3>Casa en la Playa.</h3>
+            <b>
+                <p>Precio: $250,000</p>
+            </b>
+        </a>
+ 
+        <a class="property" href="casamoderna.html">
+            <img src="./Imagenes TPO/Casa Moderna/Casa 2.jpg" alt="Casa 2">
+            <h3>Casa en la Ciudad.</h3>
+            <b>
+                <p>Precio: $450,000</p>
+            </b>
+        </a>
+ 
+        <a class="property" href="casarural.html">
+            <img src="./Imagenes TPO/Casa Rural/Casa 3.jpg" alt="Casa 3">
+            <h3>Casa rural.</h3>
+            <b>
+                <p>Precio: $180,000</p>
+            </b>
+        </a>
+    </div>
+    <section id="contacto">
+        <div class="twitter">
+            <img src="">
+            <a href="https://www.twitter.com" target="_blank" class="social-icon"> </a>
+        </div>
+        <div class="instagram">
+            <img src="">
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="container">
+                    <!-- Contacto -->
+        <div class="contact">
+            <h2>Contacto</h2>
+            <p>Teléfono: 11 541-7549</p>
+            <p>Email: info@inmobiliariaejemplo.com</p>
+            <p>Dirección: Avenida cordoba 1400, Ciudad Autónoma de Buenos Aires, País Argentina</p>
+        </div>
+        <div>
+            <form action="#" method="post">
+                <a></a>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+ 
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+        <div id="popup" style="display: none;">
+            Formulario enviado
+        </div>
+       
+    </section>
+    <!-- Pie de página -->
+    <footer>
+            <p>&copy; Inmobiliaria Vilanova 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('form').on('submit', function(event) {
+                event.preventDefault(); // Evita el envío real del formulario para fines de demostración
+   
+                // Muestra el popup de confirmación
+                $('#popup').fadeIn();
+   
+                // Oculta el popup después de 2 segundos
+                setTimeout(function() {
+                    $('#popup').fadeOut();
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+ 
+</html>

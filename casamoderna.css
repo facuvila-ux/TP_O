@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8f8;
+}
+header {
+    background-color: #7b241c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-container {
+    width: 80%; /* Ajusta el ancho del contenedor principal */
+    margin: 50px auto;
+    overflow: hidden; /* Esconde las imágenes fuera del área visible */
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-slide-container {
+    display: flex; /* Muestra los slides en fila */
+    transition: transform 0.5s ease; /* Desplazamiento suave entre los slides */
+}
+
+.carousel-slide {
+    display: flex; /* Las imágenes en cada slide se alinean en fila */
+    width: 100%; /* Cada slide ocupará todo el ancho del carrusel */
+}
+
+.carousel-slide-img {
+    width: 33.3%; /* Cada imagen ocupa un tercio del slide */
+    height: 350px;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.property-detail {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.property-detail img {
+    width: 100%;
+    height: auto;
+}
+.property-detail .details {
+    padding: 20px;
+}
+.property-detail h1 {
+    margin: 0;
+    font-size: 2em;
+}
+.property-detail p {
+    margin: 10px 0;
+}
+.button {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.button:hover {
+    background-color: #555;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 110px;
+}
+.imagenes {
+    width: 20px;
+    height: auto;
+}
